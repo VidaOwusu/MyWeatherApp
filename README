@@ -1,0 +1,65 @@
+🌤️ Weather App
+A simple Node.js command-line tool that allows users to enter a city name and fetches current weather information such as temperature, wind speed, and humidity using the Open-Meteo API. The app includes error handling and logs meaningful output for ease of debugging.
+
+📦 Project Overview
+This Weather App takes a city name as input, uses the Open-Meteo Geocoding API to get coordinates, and then fetches real-time weather data. It outputs:
+
+Temperature in Celsius
+
+Weather condition (description based on weather codes)
+
+Wind speed and humidity (if extended)
+
+Installation Instructions
+Clone the repository:
+git clone https://github.com/your-username/weather-app.git
+cd weather-app
+
+Install dependencies:
+npm install
+
+Ensure you're using Node.js version 18.4.0 or higher:
+node -v
+
+Usage Guide
+1. Run the app:
+npm start
+2. When prompted, enter a city name (e.g., London, Accra, New York).
+3. View the weather output in your terminal.
+
+Example Output
+Enter a city name: Accra
+
+Weather for Accra:
+--------------------
+Temperature: 29°C
+Condition: Partly cloudy
+
+Features
+1. Fetches weather using real-time Open-Meteo data
+
+2. Displays human-readable weather descriptions
+
+Handles:
+
+1. Invalid or misspelled city names
+
+2. API connection issues
+
+3. Unexpected responses
+
+4. Easy-to-understand code structure for beginners
+
+5. Can be extended to support logging to a file (e.g., weather.log)
+
+Future Improvements
+1. Display additional metrics: wind speed, humidity
+
+2. Add unit switching (Celsius/Fahrenheit)
+
+3. Store recent queries in a log file
+
+4. Add retry functionality for failed network calls
+
+5. Convert it into a web API or integrate with a frontend
+
